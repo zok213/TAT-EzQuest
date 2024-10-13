@@ -1,0 +1,71 @@
+.popup-ad {
+    display: flex;
+    height: auto;
+    padding: 16px;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-shrink: 0;
+    align-self: stretch;
+    border-radius: 24px;
+    border: 1px solid #E2E8F0;
+    background: #FFF;
+    max-width: 15vw;
+    margin: 2vw 20px;
+}
+
+.dismiss-btn, .download-btn {
+    margin: 10px 5px;
+    padding: 8px 12px;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.dismiss-btn {
+    background-color: #ddd;
+    color: #555;
+    border-radius: 4px;
+}
+.dismiss-btn:hover {
+  background-color: #ccc;
+}
+
+.download-btn {
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 4px;
+}
+.download-btn:hover {
+    background-color: #45a049;
+}
+
+
+.icon{
+    display: flex;
+    align-items: flex-start;
+    gap: 9vw;
+    align-self: stretch;
+}
+.close {
+    position: relative;
+    width: 3vw;
+    height: 3vw;
+    opacity: 0.3;
+  }
+  .close:hover {
+    opacity: 1;
+  }
+  .close:before, .close:after {
+    position: absolute;
+    left: 15px;
+    content: ' ';
+    height: 33px;
+    width: 2px;
+    background-color: #333;
+  }
+  .close:before {
+    transform: rotate(45deg);
+  }
+  .close:after {
+    transform: rotate(-45deg);
+  }

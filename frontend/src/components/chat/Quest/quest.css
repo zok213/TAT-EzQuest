@@ -1,0 +1,44 @@
+.quest {
+    align-items: center;
+    background-color: #ffffff;
+    border: 1px solid;
+    border-color: #cbd5e1;
+    border-radius: 1234px;
+    display: flex;
+    gap: 10px;
+    padding: 12px;
+    position: relative;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.quest .div {
+    align-items: center;
+    display: flex;
+    flex: 1;
+    flex-grow: 1;
+    gap: 8px;
+    position: relative;
+}
+
+.quest .format {
+    height: 24px !important;
+    position: relative !important;
+    width: 24px !important;
+}
+
+.quest .text-wrapper > input {
+    flex-grow: 1;
+    border: none;
+    outline: none;
+    font-size: 14px;
+    color: #475569;
+    padding: 5px;
+}
+
+.quest .div-2 {
+    align-items: center;
+    display: inline-flex;
+    flex: 0 0 auto;
+    gap: 12px;
+    position: relative;
+}

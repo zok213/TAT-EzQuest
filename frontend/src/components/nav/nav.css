@@ -1,0 +1,125 @@
+/* Basic navbar styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #f5f5f5;
+    border-bottom: 1px solid #ddd;
+    gap: 20px;
+  }
+  
+  /* Left side of the navbar */
+  .navbar-left {
+    display: flex;
+    align-items: center;
+    gap: 1vw;
+  }
+  
+  /* Model selector dropdown */
+  .model-selector {
+    font-size: 16px;
+    padding: 5px;
+    margin-right: 10px;
+  }
+  
+  /* Upgrade link styling */
+  .upgrade-link {
+    font-size: 16px;
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .upgrade-link:hover {
+    text-decoration: underline;
+  }
+  .navbar-middle {
+    display: flex;
+    align-items: center;
+    padding-right: 100px;
+  }
+  /* Right side of the navbar */
+  .navbar-right {
+    display: flex;
+    align-items: center;
+  }
+  
+  /* Icon styling */
+  .icon {
+    font-size: 20px;
+    margin: 0 10px;
+    cursor: pointer;
+    color: #555;
+  }
+  
+  /* Timestamp styling */
+  .timestamp {
+    font-size: 14px;
+    color: #888;
+    margin-right: 10px;
+  }
+
+  .avatar-label {
+    align-items: center;
+    display: flex;
+    gap: 12px;
+    position: relative;
+    width: 240px;
+}
+
+.avatar-label .frame {
+    align-items: flex-start;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    flex-grow: 1;
+    gap: 4px;
+    position: relative;
+}
+
+.avatar-label .text-wrapper {
+    align-self: stretch;
+    color: #1e293b;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: -0.11px;
+    line-height: 22px;
+    margin-top: -1px;
+    position: relative;
+}
+
+.avatar-label .div {
+    align-self: stretch;
+    color: #475569;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: 22.4px;
+    position: relative;
+}
+
+.button {
+    align-items: center;
+    display: inline-flex;
+    gap: 8px;
+    justify-content: center;
+    position: relative;
+}
+
+.button .text {
+    color: #475569;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: -0.14px;
+    line-height: 24px;
+    margin-top: -1px;
+    position: relative;
+    white-space: nowrap;
+    width: fit-content;
+}
+
+.button .caret-down {
+    height: 24px !important;
+    position: relative !important;
+    width: 24px !important;
+}
