@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  app:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    container_name: tat-ezquest-app
+    ports:
+      - "7860:7860"
+    environment:
+      - CLOUD_HOME=/home/user
+      - PATH=/home/user/.local/bin:$PATH
+    volumes:
+      - ./backend:/home/user/app
+    command: uvicorn main:app --host 0.0.0.0 --port 7860

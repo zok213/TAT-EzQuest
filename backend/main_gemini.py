@@ -10,14 +10,11 @@ load_dotenv()
 key = os.getenv("GENAI_API_KEY")
 
 app = FastAPI()
-origins = [
-    "http://192.168.1.102:3000 ",
-    "http://localhost:3000",
-]
+
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=origins,
+    allow_origins=["*"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
