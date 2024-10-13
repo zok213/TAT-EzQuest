@@ -9,7 +9,11 @@ from dotenv import load_dotenv
 load_dotenv()
 key = os.getenv("GENAI_API_KEY")
 
-app = FastAPI()
+app = FastAPI(
+    title="TAT-EzQuest AI service",
+    description="TAT-EzQuest AI Back-end Service",
+    version="0.0.1"
+)
 
 
 app.add_middleware(
@@ -49,5 +53,5 @@ async def create_item(prompt: Prompt):
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
 if __name__ == "__main__":
-    uvicorn.run(app, host="0.0.0.0", port=8000)
+    uvicorn.run(app, host="0.0.0.0", port=7860)
     
