@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/TAT-EzQuest/static/css/main.e3846ce6.css",
+    "main.js": "/TAT-EzQuest/static/js/main.a0afb13e.js",
+    "index.html": "/TAT-EzQuest/index.html",
+    "main.e3846ce6.css.map": "/TAT-EzQuest/static/css/main.e3846ce6.css.map",
+    "main.a0afb13e.js.map": "/TAT-EzQuest/static/js/main.a0afb13e.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e3846ce6.css",
+    "static/js/main.a0afb13e.js"
+  ]
+}
