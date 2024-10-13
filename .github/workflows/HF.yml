@@ -1,0 +1,38 @@
+name: Upload Backend Files to Hugging Face
+
+on:
+  push:
+    branches:
+      - main  
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+      
+    - name: Set up Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: '3.11.5'
+
+    - name: Install dependencies
+      run: |
+        pip install huggingface_hub
+        
+    - name: Upload Backend to Hugging Face
+      env:
+        HF_TOKEN: ${{ secrets.HF_API_TOKEN }}
+      run: |
+        from huggingface_hub import HfApi
+        api = HfApi()
+
+        api.upload_folder(
+          folder_path="backend",=
+          repo_id="Zok213/AI-Service", 
+          repo_type="space",
+          commit_message="Updated backend files",
+          token='${{ secrets.HF_API_TOKEN }}'
+        )
