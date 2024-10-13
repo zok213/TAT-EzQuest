@@ -12,7 +12,9 @@ key = os.getenv("GENAI_API_KEY")
 app = FastAPI(
     title="TAT-EzQuest AI service",
     description="TAT-EzQuest AI Back-end Service",
-    version="0.0.1"
+    version="0.0.1",
+    docs_url="/docs",  
+    redoc_url="/redoc"  
 )
 
 app.add_middleware(
@@ -25,10 +27,6 @@ app.add_middleware(
 
 class Prompt(BaseModel):
     prom: str
-
-@app.get("/", response_class=HTMLResponse)
-async def read_root():
-    return "<h1>Welcome to TAT-EzQuest AI Service</h1>"
 
 @app.post("/post")
 async def create_item(prompt: Prompt):
